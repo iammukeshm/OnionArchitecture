@@ -4,8 +4,8 @@ using System.Text;
 
 namespace Domain.Common
 {
-    public abstract class BaseEntity
-    {
-        public int Id { get; set; }
-    }
+public abstract class BaseEntity
+{
+    public int Id { get; set; }
+}
 }

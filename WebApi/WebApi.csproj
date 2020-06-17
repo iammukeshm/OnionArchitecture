@@ -11,5 +11,8 @@
   <PackageReference Include="Swashbuckle.AspNetCore" Version="5.3.3" />
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.3.3" />
 </ItemGroup>
+<ItemGroup>
+  <ProjectReference Include="..\Application\Application.csproj" />
+</ItemGroup>
 
 </Project>
