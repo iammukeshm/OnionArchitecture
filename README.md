@@ -14,4 +14,4 @@ We will talk about Onion Architecture In ASP.NET Core and it's advantages. We wi
 <ul><li>Onion Architecture</li><li>Entity Framework Core</li><li>.NET Core 3.1 Library / .NET Standard 2.1 Library / ASP.NET Core 3.1 WebApi</li><li>Swagger</li><li>CQRS / Mediator Pattern using MediatR Library</li><li>CRUD Operations</li><li>Inverted Dependencies</li><li>API Versioning</li></ul>
 <!-- /wp:list -->
 
-Read more on my Blog Post - 
+Read more on my Blog Post - https://www.codewithmukesh.com/blog/onion-architecture-in-aspnet-core/
