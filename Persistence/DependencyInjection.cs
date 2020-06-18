@@ -11,7 +11,6 @@ namespace Persistence
 {
     public static class DependencyInjection
     {
-        //Check
         public static void AddPersistence(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<ApplicationDbContext>(options =>

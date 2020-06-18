@@ -7,12 +7,12 @@ using System.Text;
 
 namespace Application
 {
-public static class DependencyInjection
-{
-    public static void AddApplication(this IServiceCollection services)
+    public static class DependencyInjection
     {
-        services.AddMediatR(Assembly.GetExecutingAssembly());
+        public static void AddApplication(this IServiceCollection services)
+        {
+            services.AddMediatR(Assembly.GetExecutingAssembly());
+        }
     }
-}
 }
 
