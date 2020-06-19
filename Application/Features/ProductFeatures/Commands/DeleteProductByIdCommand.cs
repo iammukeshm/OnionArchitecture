@@ -25,7 +25,7 @@ namespace Application.Features.ProductFeatures.Commands
                 var product = await _context.Products.Where(a => a.Id == command.Id).FirstOrDefaultAsync();
                 if (product == null) return default;
                 _context.Products.Remove(product);
-                await _context.SaveChanges();
+                await _context.SaveChangesAsync();
                 return product.Id;
             }
         }
