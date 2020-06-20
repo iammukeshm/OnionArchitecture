@@ -37,7 +37,7 @@ namespace Application.Features.ProductFeatures.Commands
                     product.Name = command.Name;
                     product.Rate = command.Rate;
                     product.Description = command.Description;
-                    await _context.SaveChanges();
+                    await _context.SaveChangesAsync();
                     return product.Id;
                 }
             }
