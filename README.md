@@ -19,6 +19,9 @@ We will talk about Onion Architecture In ASP.NET Core and it's advantages. We wi
 <!-- /wp:list -->
 Read more on my Blog Post - https://www.codewithmukesh.com/blog/onion-architecture-in-aspnet-core/
 
+## Full Fledged Clean Architecture Solution for ASP.NET Core WebApi
+I am building a more complex variant of this implementation that will be production ready. Check out the Repository @ https://github.com/iammukeshm/CleanArchitecture.WebApi
+
 ## Questions? Bugs? Suggestions for Improvement?
 Having any issues or troubles getting started? [Get in touch with me](https://www.codewithmukesh.com/contact) 
 
