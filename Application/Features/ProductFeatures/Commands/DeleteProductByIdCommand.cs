@@ -22,7 +22,7 @@ namespace Application.Features.ProductFeatures.Commands
             }
             public async Task<int> Handle(DeleteProductByIdCommand command, CancellationToken cancellationToken)
             {
-                var product = await _context.Products.Where(a => a.Id == command.Id).FirstOrDefaultAsync();
+                var product = await _context.Products.Where(p => p.Id == command.Id).FirstOrDefaultAsync(cancellationToken);
                 if (product == null) return default;
                 _context.Products.Remove(product);
                 await _context.SaveChangesAsync();
