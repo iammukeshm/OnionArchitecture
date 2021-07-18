@@ -25,21 +25,17 @@ namespace Application.Features.ProductFeatures.Commands
             }
             public async Task<int> Handle(UpdateProductCommand command, CancellationToken cancellationToken)
             {
-                var product = _context.Products.Where(a => a.Id == command.Id).FirstOrDefault();
+                var product = await _context.Products.Where(p => p.Id == command.Id).FirstOrDefaultAsync(cancellationToken);
 
-                if (product == null)
-                {
-                    return default;
-                }
-                else
-                {
-                    product.Barcode = command.Barcode;
-                    product.Name = command.Name;
-                    product.Rate = command.Rate;
-                    product.Description = command.Description;
-                    await _context.SaveChangesAsync();
-                    return product.Id;
-                }
+                if (product == null) return default;             
+                
+                product.Barcode = command.Barcode;
+                product.Name = command.Name;
+                product.Rate = command.Rate;
+                product.Description = command.Description;
+                await _context.SaveChangesAsync();
+                return product.Id;
+                
             }
         }
     }
