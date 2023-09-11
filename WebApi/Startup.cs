@@ -1,4 +1,5 @@
 using Application;
+using JwtProducer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -49,6 +50,7 @@ namespace WebApi
             services.AddApplication();
             services.AddPersistence(Configuration);
             services.AddControllers();
+            services.AddJwtProducer(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
