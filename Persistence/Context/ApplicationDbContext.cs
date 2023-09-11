@@ -1,5 +1,6 @@
 ﻿using Application.Interfaces;
 using Domain.Entities;
+using Domain.Identities;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 
@@ -19,6 +20,9 @@ namespace Persistence.Context
             base.OnModelCreating(modelBuilder);
         }
         public DbSet<Product> Products { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Role> Roles { get; set; }
+
         public async Task<int> SaveChangesAsync()
         {
             return await base.SaveChangesAsync();
